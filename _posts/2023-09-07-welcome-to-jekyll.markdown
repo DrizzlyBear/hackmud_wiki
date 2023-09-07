@@ -4,26 +4,13 @@ title:  "Welcome to Jekyll!"
 date:   2023-09-07 23:57:30 +0100
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+##Lorem ipsum 
+  dolor sit amet, eros affert volumus at eam, pri ex elitr meliore. Cu illud nonumy nec, at mei nusquam placerat. Impetus facilisis cum at, nec in modo erat appellantur, essent facilisi has no. Sit ut libris corpora, erat option ad eam.
 
-Jekyll requires blog post files to be named according to the following format:
+Sed at labitur qualisque inciderint, evertitur incorrupte et vim, et vel vituperata concludaturque. Mea augue scaevola ea, id ocurreret intellegam eos. Ei stet vivendo propriae has, eu cum tincidunt pertinacia, cu sit atomorum adversarium. Ea tale dolorem erroribus has.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+`Est utinam everti invenire ad. Cu qui etiam iudico lucilius. An discere pertinax nam. Cibo dicunt duo te.`
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+```Ea noster alterum probatus ius, no sed postulant argumentum. In duo etiam scaevola gloriatur. Ea omittam adipiscing vel. Aliquam officiis abhorreant at has, ut eum debitis intellegebat. Ut vis nihil possim insolens, ei his magna elaboraret interesset, pro doming instructior no.```
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Sit civibus inciderint suscipiantur at, qui quidam suscipit te. Ius sanctus fastidii maiestatis id, impedit denique no nec, mel et dictas sapientem. Eos reque timeam eloquentiam an. Tritani ponderum definitionem sea ei. Pri alterum nostrum invidunt id, sit maiestatis persequeris id. Ea nullam similique vix, cibo quaestio mel ea, quo in choro reprehendunt. Pri modo appellantur accommodare eu.
