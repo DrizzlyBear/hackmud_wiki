@@ -36,3 +36,6 @@ jobs:
           actor: ''                  # Default is the GITHUB_ACTOR
           pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
       - uses: actions/deploy-pages@v2
+        with:
+          provider: 'github'         # Default is github
+          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
