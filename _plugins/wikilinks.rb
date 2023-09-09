@@ -26,6 +26,8 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         wikipagename = note_potentially_linked_to.data['pagelinkname']
         wikipageshortname = note_potentially_linked_to.data['pagelinkshortname']
         
+        puts(wikipageshortname)
+        
         puts(title_from_data)
         
         if title_from_data
@@ -36,9 +38,9 @@ class BidirectionalLinksGenerator < Jekyll::Generator
             wikipagename = Regexp.escape(wikipagename)
         end
         
-        if wikipageshortname
-            wikipageshortname = Regexp.escape(wikipageshortname)
-        end
+        #if wikipageshortname
+        #    wikipageshortname = Regexp.escape(wikipageshortname)
+        #end
 
         new_href = "#{site.baseurl}#{note_potentially_linked_to.url}#{link_extension}"
         anchor_tag = "<a class='internal-link' href='#{new_href}'>\\1</a>"
