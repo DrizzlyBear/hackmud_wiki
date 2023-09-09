@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Laculis"
 date:   2021-12-13 23:57:30 +0100
 categories: Dolor Sit Amet

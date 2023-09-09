@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Fringilla"
 date:   2021-11-12 23:57:30 +0100
 categories: Cibo
