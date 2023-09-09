@@ -3,4 +3,6 @@ layout: page
 title:  "Image Hosting Testing"
 ---
 
-![hackmud](/assets/hackmud.png)
+![[hackmud.png]]
+
+and to make sure it works twice ![[hackmud.png]] ![[hackmud.png]]
