@@ -3,6 +3,10 @@
 
 @import "minima";
 
+body {
+    background-color: #fdfdfd !important;
+}
+
 .text_value {
   color: #FF00EC;
 }
@@ -19,6 +23,6 @@
     color: #1EFF00
 }
 
-text_trustuser {
+.text_trustuser {
     color: #FF8000
 }
