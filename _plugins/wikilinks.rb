@@ -23,15 +23,26 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         ).gsub('\_', '[ _]').gsub('\-', '[ -]').capitalize
 
         title_from_data = note_potentially_linked_to.data['title']
+        wikipagename = note_potentially_linked_to.data['pagelinkname']
+        wikipageshortname = note_potentially_linked_to.data['pagelinkshortname']
         
         puts(title_from_data)
         
         if title_from_data
           title_from_data = Regexp.escape(title_from_data)
         end
+        
+        if wikipagename
+            wikipagename = Regexp.escape(wikipagename)
+        end
+        
+        if wikipageshortname
+            wikipageshortname = Regexp.escape(wikipageshortname)
+        end
 
         new_href = "#{site.baseurl}#{note_potentially_linked_to.url}#{link_extension}"
         anchor_tag = "<a class='internal-link' href='#{new_href}'>\\1</a>"
+        autolinktag = "<a class='internal-link' href='#{new_href}'>'#{wikipageshortname}'</a>"
 
         # Replace double-bracketed links with label using note title
         # [[A note about cats|this is a link to the note about cats]]
@@ -52,6 +63,20 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         current_note.content.gsub!(
           /\[\[(#{title_from_data})\]\]/i,
           anchor_tag
+        )
+        
+        # Replace double-bracketed links with label using pagelinkname
+        # [[cats_link|this is a link to the note about cats]]
+        current_note.content.gsub!(
+          /\[\[#{wikipagename}\|(.+?)(?=\])\]\]/i,
+          anchor_tag
+        )
+
+        # Replace double-bracketed links using note title
+        # [[cats_link]]
+        current_note.content.gsub!(
+          /\[\[(#{wikipagename})\]\]/i,
+          autolinktag
         )
 
         # Replace double-bracketed links using note filename
