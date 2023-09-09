@@ -3,9 +3,16 @@
 
 @import "minima";
 
+
+@font-face {
+  font-family: "White Rabbit";
+  src: url("../assets/whiterabbit-webfont.ttf");
+}
+
 body {
     background-color: #111111 !important;
     color: #ffffff !important;
+    font-family: "White Rabbit", sans-serif !important;
 }
 
 a {
