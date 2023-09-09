@@ -11,7 +11,12 @@ class WordColour < Jekyll::Generator
                 next
             end
 
-            current_page.content = current_page.content.gsub(/("[A-Za-z0-9]*")/i, '<span class="value">\1</span>')
+            #"hello"
+            #current_page.content = current_page.content.gsub(/("[A-Za-z0-9]*")/i, '<span class="text_value">\1</span>')
+            
+            #
+            
+            current_page.content = current_page.content.gsub(/([A-Za-z0-9_]*)[ ]*:[ ]*("+[A-Za-z0-9_]*"+)/i, '<span class="text_key">\1</span>:<span class="text_value">\2</span>')
       end
    end
 end
