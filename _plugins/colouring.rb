@@ -34,6 +34,10 @@ class WordColour < Jekyll::Generator
                 #[0-9]T/Q/etc
                 current_page.content = current_page.content.gsub(/([0-9]+)(#{suffix})/,  "\\1<span class='#{style}'>\\2</span>")
             end
+            
+            # Autocolouring success and failure might be a bit much
+            #current_page.content = current_page.content.gsub(/(success)/i, '<span class="text_success">\1</span>')
+            #current_page.content = current_page.content.gsub(/(failure)/i, '<span class="text_failure">\1</span>')
         end
     end
 end
