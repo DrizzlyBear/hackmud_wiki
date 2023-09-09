@@ -7,7 +7,7 @@ pagelinkname: DSACategory
 pagelinkshortname: Dolor Sit Amet
 ---
 
-[[laculis]]
+[[iaculis]]
 
 [[libero]]
 
