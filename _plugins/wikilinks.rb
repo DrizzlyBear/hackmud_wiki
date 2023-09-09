@@ -5,8 +5,9 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     graph_edges = []
 
     all_pages = site.pages
+    all_posts = site.posts.docs
 
-    all_docs = all_pages
+    all_docs = all_pages + all_posts
 
     link_extension = !!site.config["use_html_extension"] ? '.html' : ''
 
@@ -22,6 +23,9 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         ).gsub('\_', '[ _]').gsub('\-', '[ -]').capitalize
 
         title_from_data = note_potentially_linked_to.data['title']
+        
+        puts(title_from_data)
+        
         if title_from_data
           title_from_data = Regexp.escape(title_from_data)
         end
