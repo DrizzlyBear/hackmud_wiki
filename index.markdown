@@ -1,6 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+title: Wiki
+layout: post
 ---
+
+This is a hackmud test wiki. It links to pages like [[laculis]] and [[libero]]
+
+There are categories [[dsacategory]] and [[cibocategory]]
