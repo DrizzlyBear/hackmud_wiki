@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Ultricies"
 date:   2021-11-11 23:57:30 +0100
 categories: Cibo

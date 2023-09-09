@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Tellus"
 date:   2021-12-11 23:57:30 +0100
 categories: Dolor Sit Amet

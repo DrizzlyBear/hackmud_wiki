@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Facuibus"
 date:   2021-11-13 23:57:30 +0100
 categories: wiki

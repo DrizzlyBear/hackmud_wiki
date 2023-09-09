@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Libero"
 date:   2021-12-12 23:57:30 +0100
 categories: Dolor Sit Amet
