@@ -56,7 +56,7 @@ Writing should be relatively professional: use of abbreviations or contractions 
 
 ### Casing and Conventions
 
-When adding files or folders, use lowercase path names, and replace spaces with underscores. However, article titles and heading names should be capitalized as if they were book titles. The names of locks should reflect the name of the _item_ within the game - in particular, "ez_21" should be always be preferred to "Ez_21", including at the start of a sentence or within a title. The name hackmud should always be in all lowercase within article content, with no spaces between the letters. "hackmud" is preferred to "h a c k m u d" or "ｈａｃｋｍｕｄ" for consistency and ease of writing. However, it is acceptable to stylize it as "ｈａｃｋｍｕｄ" in places where it appears prominently: for instance, as the title for the hackmud page, in the wiki name, or in the text that appears at the bottom of all pages.
+When adding files or folders, use lowercase path names, and replace spaces with underscores. However, article titles and heading names should be capitalized as if they were book titles. The names of locks should reflect the name of the _item_ within the game - in particular, "ez_21" should be always be preferred to "Ez_21" or "EZ_21", including at the start of a sentence or within a title. The name hackmud should always be in all lowercase within article content, with no spaces between the letters. "hackmud" is preferred to "h a c k m u d" or "ｈａｃｋｍｕｄ" for consistency and ease of writing. However, it is acceptable to stylize it as "ｈａｃｋｍｕｄ" in places where it appears prominently: for instance, as the title for the hackmud page, in the wiki name, or in the text that appears at the bottom of all pages.
 
 ### Contributing Markdown & Code
 
