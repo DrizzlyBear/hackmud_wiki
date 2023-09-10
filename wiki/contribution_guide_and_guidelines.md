@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Contribution Guide & Guidelines
 pagelinkname: contribution_guide
 pagelinkshortname: Contribution Guide
@@ -21,7 +20,6 @@ Each page on the wiki begins with some content (called the front matter) enclose
 
 ```
 ---
-layout: page
 title: Your Page Title
 categories: somecategory (e.g. locks)
 pagelinkname: somename
@@ -30,7 +28,7 @@ tags: [locks, tier_1]
 ---
 ```
 
-This should contain `layout: page`, `title: <article title>`, `pagelinkname: <name used within markdown to link to this article>`, and `pagelinkshortname: <name displayed when someone links to this article>`, at a minimum. `pagelinkname` _should_ match the filename of the article, but may be shortened for convenience or for disambiguation purposes. Similarly, `pagelinkshortname` should match the title of the article, but may also be shortened for convenience. Pages must have unique `pagelinkname`s, so be mindful of that.
+This should contain `title: <article title>`, `pagelinkname: <name used within markdown to link to this article>`, and `pagelinkshortname: <name displayed when someone links to this article>`, at a minimum. `pagelinkname` _should_ match the filename of the article, but may be shortened for convenience or for disambiguation purposes. Similarly, `pagelinkshortname` should match the title of the article, but may also be shortened for convenience. Pages must have unique `pagelinkname`s, so be mindful of that.
 
 ### Tags
 
