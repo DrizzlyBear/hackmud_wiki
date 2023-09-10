@@ -36,6 +36,10 @@ class BottomLinks < Jekyll::Generator
                 if my_tags[0] != their_tags[0]
                     next
                 end
+                
+                if their_tags[1] == nil
+                    next
+                end
 
                 if table_builder[their_tags[1]] == nil
                     table_builder[their_tags[1]] = []
