@@ -4,8 +4,6 @@ Please ensure you have read the [contributing guidelines](https://drizzlybear.gi
 
 My Issue/Question:
 
-XXX (please provide as much useful information as possible)
+(Please provide as much useful information as possible here)
 
 Steps to reproduce (if applicable):
-
-XXX
