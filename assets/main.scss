@@ -108,5 +108,9 @@ a {
 }
 
 .post-content > h1 {
-  @include relative-font-size(2.5);
+    @include relative-font-size(2.5);
+}
+
+table tr {
+    background-color: #1a1a1a !important; 
 }
