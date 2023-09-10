@@ -111,8 +111,14 @@ a {
     @include relative-font-size(2.5);
 }
 
-table tr {
-    background-color: #1a1a1a !important; 
+table {
+    width: 50 !important;
+    color: #8f8f8f !important;
+    background-color: #1f1f1f !important;
+}
+
+table tr:nth-child(even) {
+    background-color: none !important; 
 }
 code {
   background-color: #202020 !important;
