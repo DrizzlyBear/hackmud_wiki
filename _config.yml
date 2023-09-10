@@ -46,7 +46,6 @@ kramdown:
 
 toc:
   ordered_list: true
-  min_level: 2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
