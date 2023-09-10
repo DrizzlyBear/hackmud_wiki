@@ -17,11 +17,11 @@ body {
 
 a {
     color: #006fff !important;
-    
+
     a:visited {
         color: #005eda !important;
     }
-    
+
     a:hover {
         color: #008eff !important;
     }
@@ -105,4 +105,8 @@ a {
 
 .table-of-contents > p, ul, ol {
     margin-bottom: 0px;
+}
+
+.post-content > h1 {
+  @include relative-font-size(2.5);
 }
