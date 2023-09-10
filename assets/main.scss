@@ -3,10 +3,9 @@
 
 @import "minima";
 
-
 @font-face {
-  font-family: "White Rabbit";
-  src: url("../assets/whiterabbit-webfont.ttf");
+    font-family: "White Rabbit";
+    src: url("../assets/whiterabbit-webfont.ttf");
 }
 
 body {
@@ -36,7 +35,7 @@ a {
 }
 
 .text_value {
-  color: #FF00EC;
+    color: #FF00EC;
 }
 
 .text_key {
@@ -112,14 +111,14 @@ a {
 }
 
 table {
-  width: 50px !important;
-  color: #d0d0d0 !important;
-  background-color: #1f1f1f !important; }
+    width: 50px !important;
+    color: #d0d0d0 !important;
+    background-color: #1f1f1f !important; }
 
 table tr{
-  background-color: #202020 !important;
+    background-color: #202020 !important;
 }
 
 table th{
-  background-color: #3a3a3a;
+    background-color: #3a3a3a;
 }
