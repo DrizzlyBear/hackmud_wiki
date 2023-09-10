@@ -57,7 +57,7 @@ class BottomLinks < Jekyll::Generator
             end
         end
 
-        str = "| #{headers.join(' | ')} |\n"
+        str = +"| #{headers.join(' | ')} |\n"
 
         str << "| "
 
