@@ -112,14 +112,14 @@ a {
 }
 
 table {
-    width: 50 !important;
-    color: #8f8f8f !important;
-    background-color: #1f1f1f !important;
+  width: 50px !important;
+  color: #d0d0d0 !important;
+  background-color: #1f1f1f !important; }
+
+table tr{
+  background-color: #202020 !important;
 }
 
-table tr:nth-child(even) {
-    background-color: none !important; 
-}
-code {
-  background-color: #202020 !important;
+table th{
+  background-color: #3a3a3a;
 }
