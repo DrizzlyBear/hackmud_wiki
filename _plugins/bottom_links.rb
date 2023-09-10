@@ -73,6 +73,14 @@ class BottomLinks < Jekyll::Generator
             current_page.content << "\n\n| "
             current_page.content << headers.join(' | ')
             current_page.content << " |\n"
+            
+            current_page.content << "| "
+            
+            headers.each do |h|
+                current_page.content << "------ | "
+            end
+            
+            current_page.content << "\n"
 
             for index in (0...value_max)
                 to_join = []
