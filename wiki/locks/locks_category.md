@@ -1,11 +1,10 @@
 ---
-layout: page
-title:  "Locks"
-topbarname: "Locks"
+title: Locks
+topbarname: Locks
 categories: locks
 pagelinkname: locks
 pagelinkshortname: locks
-tags: ["locks"]
+tags: [locks]
 
 ---
 

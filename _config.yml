@@ -22,7 +22,7 @@ domain: drizzlybear.github.io
 title: hackmud wiki
 email: support@hackmud.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles. 
+  ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles.
 baseurl: "/hackmud_wiki" # the subpath of your site, e.g. /blog
 url: https://drizzlybear.github.io
 twitter_username: hackmudgame
@@ -40,6 +40,7 @@ defaults:
       path: ""
     values:
       toc: true
+      layout: page
 
 markdown: kramdown
 

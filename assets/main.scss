@@ -130,3 +130,12 @@ code {
 .highlight {
     background: #1a1a1a !important;
 }
+
+.post-title {
+    margin-bottom: 0px;
+}
+
+.source-link {
+    @include relative-font-size(0.85);
+    margin-bottom: 0px;
+}
