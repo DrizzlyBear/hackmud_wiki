@@ -23,7 +23,7 @@ Each page on the wiki begins with some content (called the front matter) enclose
 ---
 layout: page
 title:  "Your Page Title"
-categories: somecategory (eg locks)
+categories: somecategory (e.g. locks)
 pagelinkname: somename
 pagelinkshortname: shortname
 tags: ["locks", "tier_1"]
@@ -34,7 +34,7 @@ This should contain `layout: page`, `title: "<article title>"`, `pagelinkname: "
 
 ### Tags
 
-Each article can be assigned an array of two tags within the front matter: the first tag will determine which table of related articles will be linked in the "See Also:" footer, and the second tag will determine which column this article will appear in. For instance, if you were to put `tags: ["locks", "tier_1"]` in the front matter of the ez_21 article, a table of all other locks would appear in the footer of that article, and the ez_21 article would appear within the tier_1 column of all other article's locks table. If you omit the second tag (eg `tags: ["locks"]`), a table of all locks will appear without adding the current article to a column.
+Each article can be assigned an array of two tags within the front matter: the first tag will determine which table of related articles will be linked in the "See Also:" footer, and the second tag will determine which column this article will appear in. For instance, if you were to put `tags: ["locks", "tier_1"]` in the front matter of the ez_21 article, a table of all other locks would appear in the footer of that article, and the ez_21 article would appear within the tier_1 column of all other article's locks table. If you omit the second tag (e.g. `tags: ["locks"]`), a table of all locks will appear without adding the current article to a column.
 
 ## Plugins
 
