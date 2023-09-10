@@ -63,7 +63,7 @@ class BottomLinks < Jekyll::Generator
                 end
             end
 
-            current_page.content << "\nSee Also:"
+            current_page.content << "\n\nSee Also:"
 
             current_page.content << "\n\n| "
             current_page.content << headers.join(' | ')
