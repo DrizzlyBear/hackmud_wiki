@@ -11,7 +11,7 @@ In order to submit changes to this wiki, you should make a pull request to the [
 
 ## Project Structure
 
-Article content should be posted within the `/wiki` folder within the repository and images should be posted within the `/assets/images` folder. We would prefer to keep some level of organization, so you should keep pages within their respective folders. For instance, locks should go in `/wiki/locks/`
+Article content should be posted within the `/wiki/` folder within the repository and images should be posted within the `/assets/images/` folder. We would prefer to keep some level of organization, so you should keep pages within their respective folders. For instance, locks should go in `/wiki/locks/`.
 
 ### Front Matter
 
