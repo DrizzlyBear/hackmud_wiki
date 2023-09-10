@@ -110,3 +110,7 @@ a {
 .post-content > h1 {
   @include relative-font-size(2.5);
 }
+
+code {
+  background-color: #202020 !important;
+}
