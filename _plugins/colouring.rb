@@ -34,7 +34,7 @@ class WordColour < Jekyll::Generator
                 #[0-9]T/Q/etc
                 current_page.content = current_page.content.gsub(/([0-9]+)(#{suffix})([QTBMK0-9]*GC[\s\.])/,  "\\1<span class='#{style}'>\\2</span>\\3")
             end
-            
+
             current_page.content = current_page.content.gsub(/([0-9]+)(GC)([\s\.])/,  "\\1<span class=text_gc>\\2</span>\\3")
 
             # Autocolouring success and failure might be a bit much

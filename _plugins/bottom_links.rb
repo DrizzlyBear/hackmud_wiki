@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 class BottomLinks < Jekyll::Generator
     priority :highest
-    def generate(site)   
+    def generate(site)
         all_pages = site.pages
         all_posts = site.posts.docs
 
@@ -36,7 +36,7 @@ class BottomLinks < Jekyll::Generator
                 if my_tags[0] != their_tags[0]
                     next
                 end
-                
+
                 if their_tags[1] == nil
                     next
                 end
@@ -73,13 +73,13 @@ class BottomLinks < Jekyll::Generator
             current_page.content << "\n\n| "
             current_page.content << headers.join(' | ')
             current_page.content << " |\n"
-            
+
             current_page.content << "| "
-            
+
             headers.each do |h|
                 current_page.content << "------ | "
             end
-            
+
             current_page.content << "\n"
 
             for index in (0...value_max)

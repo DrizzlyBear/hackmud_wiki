@@ -16,7 +16,7 @@ Article content should be posted within the `/wiki/` folder within the repositor
 
 ### Front Matter
 
-Each page on the wiki begins with some content (called the front matter) enclosed within two `---` markers, for example: 
+Each page on the wiki begins with some content (called the front matter) enclosed within two `---` markers, for example:
 
 ```
 ---
