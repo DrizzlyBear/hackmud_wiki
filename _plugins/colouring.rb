@@ -11,30 +11,38 @@ class WordColour < Jekyll::Generator
                 next
             end
 
-            #"hello"
-            #current_page.content = current_page.content.gsub(/("[A-Za-z0-9]*")/i, '<span class="text_value">\1</span>')
-
+            #not an authoritative list, this needs to be checked for completeness
             trust_users = ["accts", "autos", "binmat", "chats", "corps", "escrow", "gui", "kernel", "market", "scripts", "sys", "trust", "users"]
 
-            #asdf_1234 : value
-            current_page.content = current_page.content.gsub(/([A-Za-z0-9_]+)[ ]*:[ ]*("+[A-Za-z0-9_]*"+)/i, '<span class="text_key">\1</span>:<span class="text_value">\2</span>')
+            #matches asdf_1234 : "value"
+            #no termination check on the above pattern because it is uncommon
+            current_page.content = current_page.content.gsub(/(\w+)[ ]*:[ ]*("[A-Za-z0-9_]*")/i, '<span class="text_key">\1</span>:<span class="text_value">\2</span>')
 
-            trust_users.each do |name |
-                #trust.hello_there
-                current_page.content = current_page.content.gsub(/(\s)(#{name})\.([A-Za-z0-9_]+)/, '\1<span class="text_trustuser">\2</span>.<span class="text_script">\3</span>')
+            #matches asdf_1234 : 1234321
+            #terminated by [whitespace, dot, ',', or }]
+            current_page.content = current_page.content.gsub(/(\w+)[ ]*:[ ]*([0-9]+)([\s\.,}])/i, '<span class="text_key">\1</span>:<span class="text_value">\2</span>\3')
+
+            trust_users.each do |name|
+                #matches trust.hello_there
+                #checks for whitespace prior to the pattern
+                current_page.content = current_page.content.gsub(/(\s)(#{name})\.(\w+)/, '\1<span class="text_trustuser">\2</span>.<span class="text_script">\3</span>')
             end
 
-            #asdf_1234.hello_there
-            current_page.content = current_page.content.gsub(/(\s)([A-Za-z0-9_]+)\.([A-Za-z0-9_]+)/i, '\1<span class="text_username">\2</span>.<span class="text_script">\3</span>')
+            #matches asdf_1234.hello_there
+            #checks for whitespace prior to the pattern
+            current_page.content = current_page.content.gsub(/(\s)(\w+)\.(\w+)/i, '\1<span class="text_username">\2</span>.<span class="text_script">\3</span>')
 
             gc_suffixes = ["Q", "T", "B", "M", "K"]
             gc_styles = ["text_gcq", "text_gct", "text_gcb", "text_gcm", "text_gck"]
 
             gc_suffixes.zip(gc_styles).each do |suffix, style|
-                #[0-9]T/Q/etc
+                #matches [0-9]T/Q/etc
+                #string is terminated with GC followed by [whitespace, or dot]
                 current_page.content = current_page.content.gsub(/([0-9]+)(#{suffix})([QTBMK0-9]*GC[\s\.])/,  "\\1<span class='#{style}'>\\2</span>\\3")
             end
-            
+
+            #matches [0-9]GC
+            #string is terminated by [whitespace, or dot]
             current_page.content = current_page.content.gsub(/([0-9]+)(GC)([\s\.])/,  "\\1<span class=text_gc>\\2</span>\\3")
 
             # Autocolouring success and failure might be a bit much
