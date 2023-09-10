@@ -1,8 +1,11 @@
 ---
-title: Wiki
-layout: post
+title: hackmud wiki
+layout: page
+toc: false
 ---
 
-This is a hackmud test wiki. It links to pages like [[iaculis]] and [[libero]]
+# Getting started
 
-There are categories [[dsacategory]] and [[cibocategory]]
+The first script you should run is teach_si_x80d.each_other. It is an official script that will lead to your first tier 1 NPCs.
+
+Also check out the scripting refrence.
