@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 class BottomLinks < Jekyll::Generator
     priority :highest
-    
+
     def gen_table(table_name, all_docs)
-        table_builder = {}    
-    
+        table_builder = {}
+
         all_docs.each do |other_doc|
             if other_doc.data["layout"] != "page"
                 next
@@ -30,18 +30,20 @@ class BottomLinks < Jekyll::Generator
 
             table_builder[their_tags[1]].append(other_doc.data['pagelinkshortname'])
         end
-        
+
         return table_builder
     end
-    
-    def append_table(page, table_builder)
+
+    def table_to_string(table_builder)
         headers = []
         values = []
 
-        table_builder.each{|k, v| headers.append(k)}
-
+        table_builder.each do |k,v|
+            headers.append(k)
+        end
+        
         if headers.length() == 0
-            return
+            return ""
         end
 
         value_max = 0
@@ -55,19 +57,15 @@ class BottomLinks < Jekyll::Generator
             end
         end
 
-        page.content << "\n\nSee Also:"
+        str = "| #{headers.join(' | ')} |\n"
 
-        page.content << "\n\n| "
-        page.content << headers.join(' | ')
-        page.content << " |\n"
-
-        page.content << "| "
+        str << "| "
 
         headers.each do |h|
-            page.content << "------ | "
+            str << "------ | "
         end
 
-        page.content << "\n"
+        str << "\n"
 
         for index in (0...value_max)
             to_join = []
@@ -76,32 +74,73 @@ class BottomLinks < Jekyll::Generator
                 to_join.append(table_builder[h][index] != nil ? "[[#{table_builder[h][index]}]]" : "")
             end
 
-            page.content << "| "
-            page.content << to_join.join(" | ")
-            page.content << " |\n"
+            str << "| "
+            str << to_join.join(" | ")
+            str << " |\n"
         end
+
+        return str
     end
-    
+
+    def append_table(page, table_as_string)
+        page.content << "\n\nSee Also:\n\n"
+
+        page.content << table_as_string
+    end
+
     def generate(site)
         all_pages = site.pages
         all_posts = site.posts.docs
 
         all_docs = all_pages + all_posts
 
+        all_built_tables = {}
+
         all_docs.each do |current_page|
             if current_page.data["layout"] != "page"
                 next
             end
 
-            my_tags = current_page.data['tags'] || []
+            tags = current_page.data['tags'] || []
 
-            if my_tags.length() == 0
+            if tags.length() == 0
                 next
             end
 
-            table_builder = gen_table(my_tags[0], all_docs)
-            
-            append_table(current_page, table_builder)
+            if all_built_tables[tags[0]] != nil
+                next
+            end
+
+            as_builder = gen_table(tags[0], all_docs)
+            all_built_tables[tags[0]] = as_builder
+        end
+
+        all_docs.each do |current_page|
+            if current_page.data["layout"] != "page"
+                next
+            end
+
+            all_built_tables.each do |k,v|
+                current_page.content = current_page.content.gsub(/\?\?#{k}\?\?/, table_to_string(v))
+            end
+        end
+
+        all_docs.each do |current_page|
+            if current_page.data["layout"] != "page"
+                next
+            end
+
+            tags = current_page.data['tags'] || []
+
+            if tags.length() == 0
+                next
+            end
+
+            table_builder = all_built_tables[tags[0]]
+
+            table_as_string = table_to_string(table_builder)
+
+            append_table(current_page, table_as_string)
         end
     end
 end
