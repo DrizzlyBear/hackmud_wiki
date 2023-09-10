@@ -12,15 +12,15 @@ class BottomLinks < Jekyll::Generator
             if current_page.data["layout"] != "page"
                 next
             end
-            
+
             table_builder = {}
-            
+
             my_tags = current_page.data['tags'] || []
-            
-            if my_tags.length() == 0 
+
+            if my_tags.length() == 0
                 next
             end
-        
+
             all_docs.each do |other_doc|
                 if other_doc.data["layout"] != "page"
                     next
@@ -39,89 +39,47 @@ class BottomLinks < Jekyll::Generator
                 if table_builder[their_tags[1]] == nil
                     table_builder[their_tags[1]] = []
                 end
-                
+
                 table_builder[their_tags[1]].append(other_doc.data['pagelinkshortname'])
-
-                #in_common = 0
-            
-                #for index in (0...common)
-                #    in_common += 1
-                #end
-                
-                #if in_common > 0
-                #    table_builder[
-                #end
-
-                #if is_eq and other_doc.data['pagelinkshortname']
-                    #current_page.content << other_doc.data['pagelinkshortname']
-                    
-                #    if my_tags.length() >= 2 
-                        
-                #    end
-                #end
             end
-            
+
             headers = []
             values = []
-            
+
             table_builder.each{ |k, v| headers.append(k)}
-            
+
             if headers.length() == 0
                 next
             end
-            
-            #puts(headers)
-            #puts(values)
-            
-            headers.each do |h| 
+
+            value_max = 0
+
+            headers.each do |h|
                 local_values = table_builder[h]
-                
+                value_max = [value_max, table_builder[h].length()].max
+
                 local_values.each do |v|
                     values.append(v)
                 end
             end
-            
-            current_page.content << "\n| Test | \n | ---- | \n | Hello |\n\n"
-            
-            current_page.content << "\n| "
-            
-            headers.each do |h| 
-                current_page.content << h
-                current_page.content << ' | '
-            end
-            
-            current_page.content << "\n| "
-            
-            headers.each do |h| 
-                current_page.content << "-------- | "
-            end
-            
-            current_page.content << "\n| "
-            
-            wrap = 0
-            
-            values.each do |v|
-                current_page.content << v
-                current_page.content << " | "
-                
-                puts(wrap)
-            
-                wrap += 1
-                
-                if wrap > 0 and (wrap % headers.length()) == 0
-                    puts("wrapping")
-                
-                    if wrap != values.length()
-                        current_page.content << "\n| "
-                    else
-                        current_page.content << "\n"
-                    end
+
+            current_page.content << "\nSee Also:"
+
+            current_page.content << "\n\n| "
+            current_page.content << headers.join(' | ')
+            current_page.content << " |\n"
+
+            for index in (0...value_max)
+                to_join = []
+
+                headers.each do |h|
+                    to_join.append(table_builder[h][index] != nil ? "[[#{table_builder[h][index]}]]" : "")
                 end
+
+                current_page.content << "| "
+                current_page.content << to_join.join(" | ")
+                current_page.content << " |\n"
             end
-            
-            puts(current_page.content)
-            
-            #puts(table_builder)
         end
     end
 end
