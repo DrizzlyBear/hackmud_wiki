@@ -8,4 +8,4 @@ toc: false
 
 The first script you should run is teach_si_x80d.each_other. It is an official script that will lead to your first tier 1 NPCs.
 
-Also check out the scripting refrence.
+Also check out the scripting reference.
