@@ -1,8 +1,8 @@
 ---
 title: robovac_revolution_v1
 categories: characters
-pagelinkname: robovac_revolution_v1
-pagelinkshortname: robovac_revolution_v1
+linkmdname: robovac_revolution_v1
+linkdisplayname: robovac_revolution_v1
 tags: [lore, events]
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: expose_access_log
 categories: scripts
-pagelinkname: expose_access_log
-pagelinkshortname: expose_access_log
+linkmdname: expose_access_log
+linkdisplayname: expose_access_log
 tags: [scripts, tier_1]
 ---
 

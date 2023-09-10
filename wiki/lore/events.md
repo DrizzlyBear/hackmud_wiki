@@ -2,8 +2,8 @@
 title: Events
 topbarname: Events
 categories: events
-pagelinkname: events
-pagelinkshortname: events
+linkmdname: events
+linkdisplayname: events
 tags: [events]
 
 ---

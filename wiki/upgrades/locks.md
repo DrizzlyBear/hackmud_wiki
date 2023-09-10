@@ -2,8 +2,8 @@
 title: Locks
 topbarname: Locks
 categories: locks
-pagelinkname: locks
-pagelinkshortname: locks
+linkmdname: locks
+linkdisplayname: locks
 tags: [locks]
 
 ---

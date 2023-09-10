@@ -2,8 +2,8 @@
 title: Scripts
 topbarname: Scripts
 categories: scripts
-pagelinkname: scripts
-pagelinkshortname: scripts
+linkmdname: scripts
+linkdisplayname: scripts
 tags: [scripts]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: Contribution Guide & Guidelines
-pagelinkname: contribution_guide
-pagelinkshortname: Contribution Guide
+linkmdname: contribution_guide
+linkdisplayname: Contribution Guide
 ---
 
 # Getting Started
@@ -22,13 +22,13 @@ Each page on the wiki begins with some content (called the front matter) enclose
 ---
 title: Your Page Title
 categories: somecategory (e.g. locks)
-pagelinkname: somename
-pagelinkshortname: shortname
+linkmdname: somename
+linkdisplayname: shortname
 tags: [locks, tier_1]
 ---
 ```
 
-This should contain `title: <article title>`, `pagelinkname: <name used within markdown to link to this article>`, and `pagelinkshortname: <name displayed when someone links to this article>`, at a minimum. `pagelinkname` _should_ match the filename of the article, but may be shortened for convenience or for disambiguation purposes. Similarly, `pagelinkshortname` should match the title of the article, but may also be shortened for convenience. Pages must have unique `pagelinkname`s, so be mindful of that.
+This should contain `title: <article title>`, `linkmdname: <name used within markdown to link to this article>`, and `linkdisplayname: <name displayed when someone links to this article>`, at a minimum. `linkmdname` _should_ match the filename of the article, but may be shortened for convenience or for disambiguation purposes. Similarly, `linkdisplayname` should match the title of the article, but may also be shortened for convenience. Pages must have unique `linkmdname`s, so be mindful of that.
 
 ### Tags
 
@@ -36,7 +36,7 @@ Each article can be assigned an array of two tags within the front matter: the f
 
 ## Plugins
 
-We have plugins to link to both article pages and images. In order to link to a page, you should use the syntax \[\[pagelinkname\]\]. In order to link to an image, use the syntax !\[\[image_path\]\]. This image path is interpreted relative to `/assets/images`, so for instance, !\[\[hackmud.png\]\] will link to `/assets/images/hackmud.png` within the repository, and similarly !\[\[locks/ez_21.png\]\] will link to `/assets/imags/locks/ez_21.png`. In general, we want to avoid any future potential breakages related to moving pages around, which is why these plugins operate like this.
+We have plugins to link to both article pages and images. In order to link to a page, you should use the syntax \[\[linkmdname\]\]. In order to link to an image, use the syntax !\[\[image_path\]\]. This image path is interpreted relative to `/assets/images`, so for instance, !\[\[hackmud.png\]\] will link to `/assets/images/hackmud.png` within the repository, and similarly !\[\[locks/ez_21.png\]\] will link to `/assets/imags/locks/ez_21.png`. In general, we want to avoid any future potential breakages related to moving pages around, which is why these plugins operate like this.
 
 ### Table of Contents
 

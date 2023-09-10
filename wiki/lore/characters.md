@@ -2,8 +2,8 @@
 title: Characters
 topbarname: Characters
 categories: characters
-pagelinkname: characters
-pagelinkshortname: characters
+linkmdname: characters
+linkdisplayname: characters
 tags: [characters]
 
 ---

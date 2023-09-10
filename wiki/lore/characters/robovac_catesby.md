@@ -1,8 +1,8 @@
 ---
 title: robovac_catesby
 categories: characters
-pagelinkname: robovac_catesby
-pagelinkshortname: robovac_catesby
+linkmdname: robovac_catesby
+linkdisplayname: robovac_catesby
 tags: [lore, characters]
 ---
 ![[catesby.png]]

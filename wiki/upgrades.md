@@ -2,8 +2,8 @@
 title: Upgrades
 topbarname: Upgrades
 categories: upgrades
-pagelinkname: upgrades
-pagelinkshortname: upgrades
+linkmdname: upgrades
+linkdisplayname: upgrades
 tags: [upgrades]
 
 ---

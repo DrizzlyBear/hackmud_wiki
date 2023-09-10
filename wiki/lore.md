@@ -2,8 +2,8 @@
 title: Lore
 topbarname: Lore
 categories: lore
-pagelinkname: lore
-pagelinkshortname: lore
+linkmdname: lore
+linkdisplayname: lore
 tags: [lore]
 
 ---

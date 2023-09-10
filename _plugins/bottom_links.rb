@@ -28,7 +28,7 @@ class BottomLinks < Jekyll::Generator
                 table_builder[their_tags[1]] = []
             end
 
-            table_builder[their_tags[1]].append(other_doc.data['pagelinkshortname'])
+            table_builder[their_tags[1]].append(other_doc.data['linkdisplayname'])
         end
 
         return table_builder
