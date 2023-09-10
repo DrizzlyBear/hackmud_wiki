@@ -5,7 +5,7 @@ pagelinkname: robovac_catesby
 pagelinkshortname: robovac_catesby
 tags: [lore, characters]
 ---
-[[catesby.png]]
+![[catesby.png]]
 # Description
 
 Mistakening seen as a robovac, is a teapot.
