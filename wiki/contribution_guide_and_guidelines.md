@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Contribution Guide & Guidelines"
-pagelinkname: "contribution_guide"
-pagelinkshortname: "Contribution Guide"
+title: Contribution Guide & Guidelines
+pagelinkname: contribution_guide
+pagelinkshortname: Contribution Guide
 ---
 
 # Getting Started
@@ -22,19 +22,19 @@ Each page on the wiki begins with some content (called the front matter) enclose
 ```
 ---
 layout: page
-title:  "Your Page Title"
+title: Your Page Title
 categories: somecategory (e.g. locks)
 pagelinkname: somename
 pagelinkshortname: shortname
-tags: ["locks", "tier_1"]
+tags: [locks, tier_1]
 ---
 ```
 
-This should contain `layout: page`, `title: "<article title>"`, `pagelinkname: "<name used within markdown to link to this article>"`, and `pagelinkshortname: "<name displayed when someone links to this article>"`, at a minimum. `pagelinkname` _should_ match the filename of the article, but may be shortened for convenience or for disambiguation purposes. Similarly, `pagelinkshortname` should match the title of the article, but may also be shortened for convenience. Pages must have unique `pagelinkname`s, so be mindful of that.
+This should contain `layout: page`, `title: <article title>`, `pagelinkname: <name used within markdown to link to this article>`, and `pagelinkshortname: <name displayed when someone links to this article>`, at a minimum. `pagelinkname` _should_ match the filename of the article, but may be shortened for convenience or for disambiguation purposes. Similarly, `pagelinkshortname` should match the title of the article, but may also be shortened for convenience. Pages must have unique `pagelinkname`s, so be mindful of that.
 
 ### Tags
 
-Each article can be assigned an array of two tags within the front matter: the first tag will determine which table of related articles will be linked in the "See Also:" footer, and the second tag will determine which column this article will appear in. For instance, if you were to put `tags: ["locks", "tier_1"]` in the front matter of the ez_21 article, a table of all other locks would appear in the footer of that article, and the ez_21 article would appear within the tier_1 column of all other article's locks table. If you omit the second tag (e.g. `tags: ["locks"]`), a table of all locks will appear without adding the current article to a column.
+Each article can be assigned an array of two tags within the front matter: the first tag will determine which table of related articles will be linked in the "See Also:" footer, and the second tag will determine which column this article will appear in. For instance, if you were to put `tags: [locks, tier_1]` in the front matter of the ez_21 article, a table of all other locks would appear in the footer of that article, and the ez_21 article would appear within the tier_1 column of all other article's locks table. If you omit the second tag (e.g. `tags: [locks]`), a table of all locks will appear without adding the current article to a column.
 
 ## Plugins
 
