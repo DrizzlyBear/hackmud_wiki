@@ -7,11 +7,15 @@ layout: base
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
+  {% if page.toc %}
+
   <div class="table-of-contents">
     <p>Contents</p>
     <hr/>
     {{ content | toc_only }}
   </div>
+
+  {% endif %}
 
   <div class="post-content">
     {{ content | inject_anchors }}
