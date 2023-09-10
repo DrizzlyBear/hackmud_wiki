@@ -9,7 +9,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
 
     all_docs = all_pages + all_posts
 
-    link_extension = !!site.config["use_html_extension"] ? '.html' : ''
+    link_extension = ''
 
     # Convert all Wiki/Roam-style double-bracket link syntax to plain HTML
     # anchor tag elements (<a>) with "internal-link" CSS class
