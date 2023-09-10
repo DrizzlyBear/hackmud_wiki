@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 class BottomLinks < Jekyll::Generator
-    def generate(site)
+    priority :highest
+    def generate(site)   
         all_pages = site.pages
         all_posts = site.posts.docs
 
