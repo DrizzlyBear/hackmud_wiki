@@ -1,7 +1,7 @@
 ---
 title: Locks
-topbarname: Locks
-categories: locks
+categories: Locks
+titleelement: Upgrades
 linkmdname: locks
 linkdisplayname: locks
 tags: [locks]

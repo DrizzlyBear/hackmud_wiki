@@ -1,7 +1,7 @@
 ---
 title: Characters
-topbarname: Characters
 categories: characters
+titleelement: Lore
 linkmdname: characters
 linkdisplayname: characters
 tags: [characters]

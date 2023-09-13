@@ -1,7 +1,7 @@
 ---
 title: Events
-topbarname: Events
 categories: events
+titleelement: Lore
 linkmdname: events
 linkdisplayname: events
 tags: [events]

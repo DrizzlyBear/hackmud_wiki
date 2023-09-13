@@ -1,7 +1,7 @@
 ---
 title: Scripts
-topbarname: Scripts
-categories: scripts
+categories: Upgrades
+titleelement: Upgrades
 linkmdname: scripts
 linkdisplayname: scripts
 tags: [scripts]

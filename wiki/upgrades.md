@@ -5,6 +5,7 @@ categories: upgrades
 linkmdname: upgrades
 linkdisplayname: upgrades
 tags: [upgrades]
+children: [locks,scripts]
 
 ---
 

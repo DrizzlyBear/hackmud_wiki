@@ -152,3 +152,41 @@ h1, h2, h3, h4, h5, h6 {
         background-color: #2a2a2a !important;
     }
 }
+
+.dropbtn {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: "White Rabbit", sans-serif !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    font-family: "White Rabbit", sans-serif !important;
+    position: absolute;
+    min-width: 160px;
+    background-color: #1a1a1a;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    line-height: 2;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-top: 2px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd; color: #222;} 
