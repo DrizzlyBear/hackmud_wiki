@@ -16,7 +16,7 @@ class WordColour < Jekyll::Generator
 
             #matches asdf_1234 : "value"
             #no termination check on the above pattern because it is uncommon
-            current_page.content = current_page.content.gsub(/(\w+)[ ]*:[ ]*("[A-Za-z0-9_]*")/i, '<span class="text_key">\1</span>:<span class="text_value">\2</span>')
+            current_page.content = current_page.content.gsub(/(\w+)[ ]*:[ ]*("[\.A-Za-z0-9_]*")/i, '<span class="text_key">\1</span>:<span class="text_value">\2</span>')
 
             #matches asdf_1234 : 1234321
             #terminated by [whitespace, dot, ',', or }]
