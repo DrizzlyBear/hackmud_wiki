@@ -16,21 +16,23 @@
                     </span>
                 </label>
 
-                {% assign mydocs = site.pages | group_by: 'titleelement' %}
-                {% for cat in mydocs %}
-                    {% if cat.name == "" %}
-                        {% continue %}
-                    {% endif %}
-                    <div class="dropdown">
-                        <button class="dropbtn">{{cat.name}}</button>
-                        <div class="dropdown-content">
-                            {% assign items = cat.items | sort: 'order' %}
-                            {% for item in items %}
-                                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                            {% endfor %}
+                <div class="trigger">
+                    {% assign mydocs = site.pages | group_by: 'titleelement' %}
+                    {% for cat in mydocs %}
+                        {% if cat.name == "" %}
+                            {% continue %}
+                        {% endif %}
+                        <div class="dropdown">
+                            <button class="dropbtn">{{cat.name}}</button>
+                            <div class="dropdown-content">
+                                {% assign items = cat.items | sort: 'order' %}
+                                {% for item in items %}
+                                    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                                {% endfor %}
+                            </div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </nav>
         {% endif %}
     </div>
