@@ -36,11 +36,12 @@ plugins:
     - jekyll-toc
 
 defaults:
-    - scope:
-        path: ""
-    values:
-        toc: true
-        layout: page
+    -
+        scope:
+            path: ""
+        values:
+            toc: true
+            layout: page
 
 markdown: kramdown
 
