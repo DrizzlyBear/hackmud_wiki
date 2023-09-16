@@ -22,7 +22,7 @@ domain: drizzlybear.github.io
 title: hackmud wiki
 email: support@hackmud.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles.
+    ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles.
 baseurl: "/hackmud_wiki" # the subpath of your site, e.g. /blog
 url: https://drizzlybear.github.io
 twitter_username: hackmudgame
@@ -31,16 +31,17 @@ github_username:  DrizzlyBear
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jekyll-toc
+    - jekyll-feed
+    - jekyll-remote-theme
+    - jekyll-toc
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      toc: true
-      layout: page
+    -
+        scope:
+            path: ""
+        values:
+            toc: true
+            layout: page
 
 markdown: kramdown
 
@@ -48,7 +49,7 @@ kramdown:
     smart_quotes: ["apos", "apos", "quot", "quot"]
 
 toc:
-  ordered_list: true
+    ordered_list: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -59,13 +60,13 @@ toc:
 # their entries' file path in the `include:` list.
 #
 # exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+#     - .sass-cache/
+#     - .jekyll-cache/
+#     - gemfiles/
+#     - Gemfile
+#     - Gemfile.lock
+#     - node_modules/
+#     - vendor/bundle/
+#     - vendor/cache/
+#     - vendor/gems/
+#     - vendor/ruby/
