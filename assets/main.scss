@@ -166,7 +166,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     min-width: 160px;
     background-color: #1a1a1a;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    // this 0.2 SHOULD have a space in front of it but the autocoloring plugin for some reason tries to color inside css files
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);
     z-index: 1;
 }
 
