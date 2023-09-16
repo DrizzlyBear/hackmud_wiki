@@ -35,55 +35,55 @@ a {
 }
 
 .text_value {
-    color: #FF00EC;
+    color: #ff00ec;
 }
 
 .text_key {
-    color: #00FFFF;
+    color: #00ffff;
 }
 
 .text_username {
-    color: #9B9B9B
+    color: #9b9b9b;
 }
 
 .text_script {
-    color: #1EFF00
+    color: #1eff00;
 }
 
 .text_trustuser {
-    color: #FF8000
+    color: #ff8000;
 }
 
 .text_gcq {
-    color: #FF0000
+    color: #ff0000;
 }
 
 .text_gct {
-    color: #FF00EC
+    color: #ff00ec;
 }
 
 .text_gcb {
-    color: #FFF404
+    color: #fff404;
 }
 
 .text_gcm {
-    color: #1EFF00
+    color: #1eff00;
 }
 
 .text_gck {
-    color: #00FFFF
+    color: #00ffff;
 }
 
 .text_gc {
-    color: #9B9B9B
+    color: #9b9b9b;
 }
 
 .text_success {
-    color: #1EFF00
+    color: #1eff00;
 }
 
 .text_failure {
-    color: #FF0000
+    color: #ff0000;
 }
 
 .table-of-contents {
@@ -142,8 +142,7 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    text-shadow: 2px 2px 0px #507AA1;
-    // border-bottom: 1px solid white;
+    text-shadow: 2px 2px 0px #507aa1;
     text-decoration: underline;
 }
 
@@ -167,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     min-width: 160px;
     background-color: #1a1a1a;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -192,18 +191,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
 }
 
-.sidebar{
-    height:100%;
+.sidebar {
+    height: 100%;
     max-width: 300px;
-    background-color:#1a1a1a;
-    position:fixed !important;
-    z-index:1;
-    overflow:auto;
-    top:0;
-    left:0;
-    padding-top:90px;
-    padding-left:20px;
-    box-shadow:2px 2px 0px #bbb;
+    background-color: #1a1a1a;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    padding-top: 90px;
+    padding-left: 20px;
+    box-shadow: 2px 2px 0px #bbb;
 }
 
 @media screen and (max-width: 600px) {
@@ -223,14 +222,13 @@ h1, h2, h3, h4, h5, h6 {
         left: auto;
     }
 
-    .sidebar{
-        display:none;
-    }
-}
-@media screen and (max-width: 1400px) {
-    .sidebar{
-        display:none;
+    .sidebar {
+        display: none;
     }
 }
 
-    
+@media screen and (max-width: 1400px) {
+    .sidebar {
+        display: none;
+    }
+}
