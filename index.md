@@ -1,6 +1,7 @@
 ---
 title: hackmud wiki
 toc: false
+layout: page
 ---
 
 # Getting started
