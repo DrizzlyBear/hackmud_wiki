@@ -25,12 +25,12 @@ class WordColour < Jekyll::Generator
             trust_users.each do |name|
                 #matches trust.hello_there
                 #checks for whitespace prior to the pattern
-                current_page.content = current_page.content.gsub(/(\s)(#{name})\.(\w+)/, '\1<span class="text_trustuser">\2</span>.<span class="text_script">\3</span>')
+                current_page.content = current_page.content.gsub(/(\s)(#{name})\.([A-Za-z]\w*)/, '\1<span class="text_trustuser">\2</span>.<span class="text_script">\3</span>')
             end
 
             #matches asdf_1234.hello_there
             #checks for whitespace prior to the pattern
-            current_page.content = current_page.content.gsub(/(\s)(\w+)\.(\w+)/i, '\1<span class="text_username">\2</span>.<span class="text_script">\3</span>')
+            current_page.content = current_page.content.gsub(/(\s)([A-Za-z]\w*)\.([A-Za-z]\w*)/i, '\1<span class="text_username">\2</span>.<span class="text_script">\3</span>')
 
             gc_suffixes = ["Q", "T", "B", "M", "K"]
             gc_styles = ["text_gcq", "text_gct", "text_gcb", "text_gcm", "text_gck"]
