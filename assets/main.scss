@@ -192,6 +192,20 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
 }
 
+.sidebar{
+    height:100%;
+    max-width: 300px;
+    background-color:#1a1a1a;
+    position:fixed !important;
+    z-index:1;
+    overflow:auto;
+    top:0;
+    left:0;
+    padding-top:90px;
+    padding-left:20px;
+    box-shadow:2px 2px 0px #bbb;
+}
+
 @media screen and (max-width: 600px) {
     .site-nav {
         background-color: #2a2a2a;
@@ -208,4 +222,15 @@ h1, h2, h3, h4, h5, h6 {
         right: 0;
         left: auto;
     }
+
+    .sidebar{
+        display:none;
+    }
 }
+@media screen and (max-width: 1400px) {
+    .sidebar{
+        display:none;
+    }
+}
+
+    
