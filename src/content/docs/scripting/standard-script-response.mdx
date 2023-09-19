@@ -1,0 +1,74 @@
+---
+title: Standard Script Response
+---
+import PlayerScript from "../../../components/PlayerScript.astro"
+import HackmudBlock from "../../../components/HackmudBlock"
+import * as Color from "../../../components/color"
+import Mono from "../../../components/Mono.astro"
+
+The standard script response is a very common type returned by trust scripts.
+It will either be an object containing one `ok` property with the value `true`.
+Or it will be an object with an `ok` property with the value `false` and an optional `msg` property that contains an
+error message as a string if present.
+
+## CLI
+When this type is returned to the CLI, the client automatically converts it into a `Success` or `Failure` message.
+
+:::caution
+[<PlayerScript name="echo.echo"/> is a player script.](/scripting/echoecho)
+:::
+
+{/* TODO there's gotta be a better way to demonstrate script returns */}
+<pre style="background-color :var(--astro-code-color-background); font-family: White Rabbit, monospace; font-size: 1em">
+<Color.A>
+\>><PlayerScript name="echo.echo"/> \{ <Color.N>echo</Color.N>: \{ <Color.N>ok</Color.N>: <Color.V>true</Color.V> } }
+<Color.L>Success</Color.L>
+
+\>><PlayerScript name="echo.echo"/> \{ <Color.N>echo</Color.N>: \{ <Color.N>ok</Color.N>: <Color.V>false</Color.V> } }
+<Color.D>Failure</Color.D>
+
+\>><PlayerScript name="echo.echo"/> \{ <Color.N>echo</Color.N>: \{ <Color.N>ok</Color.N>: <Color.V>false</Color.V>, <Color.N>msg</Color.N>: <Color.V>"foo"</Color.V> } }
+<Color.D>Failure</Color.D>
+<Color.S>foo</Color.S>
+</Color.A>
+</pre>
+
+<pre is:raw="" class="astro-code css-variables" style="overflow-x:auto" tabindex="0" dir="ltr">
+<code>
+<span class="line">
+<Color.A>
+\>><PlayerScript name="echo.echo"/> \{ <Color.N>echo</Color.N>: \{ <Color.N>ok</Color.N>: <Color.V>true</Color.V> } }
+</Color.A>
+</span>
+<span class="line">
+<Color.L>Success</Color.L>
+</span>
+
+<span class="line"/>
+
+<span class="line">
+\>><PlayerScript name="echo.echo"/> \{ <Color.N>echo</Color.N>: \{ <Color.N>ok</Color.N>: <Color.V>false</Color.V> } }
+</span>
+
+<span class="line">
+<Color.A>
+<Color.D>Failure</Color.D>
+</Color.A>
+</span>
+
+<span class="line"/>
+
+<Color.A>
+\>><PlayerScript name="echo.echo"/> \{ <Color.N>echo</Color.N>: \{ <Color.N>ok</Color.N>: <Color.V>false</Color.V>, <Color.N>msg</Color.N>: <Color.V>"foo"</Color.V> } }
+<Color.D>Failure</Color.D>
+<Color.S>foo</Color.S>
+</Color.A>
+</code>
+</pre>
+
+## Type
+```ts
+type StandardScriptResponse = { ok: true } | { ok: false, msg?: string }
+
+type StandardScriptResponse = { ok: true } | { ok: false, msg?: string }
+```
