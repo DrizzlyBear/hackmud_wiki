@@ -1,10 +1,21 @@
 {
   "name": "hackmud-wiki",
   "version": "0.0.1",
-  "description": "Guides and knowledge repository for the game hackmud",
+  "description": "Knowledgebase for the game hackmud",
   "author": "ComCODE",
-  "scripts": {},
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "swizzle": "docusaurus swizzle",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
+    "@docusaurus/core": "^2.4.1",
     "@docusaurus/plugin-content-docs": "^2.4.1",
     "@docusaurus/theme-classic": "^2.4.1",
     "glob": "^10.3.4",
