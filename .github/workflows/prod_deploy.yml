@@ -23,14 +23,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
       - name: Setup Node.js Environment
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: 18
           cache: pnpm
           cache-dependency-path: ${{ env.BUILD_PATH }}/pnpm-lock.yaml
-      - name: Install pnpm
-        run: npm install -g pnpm
       - name: Install dependencies
         run: pnpm install
       - name: Build site with Docusaurus
