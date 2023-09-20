@@ -2,7 +2,7 @@ name: Deploy Docusaurus site to GitHub Pages
 
 on:
   push:
-    branches: [docusaurus-demo]
+    branches: [$default-branch]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +19,7 @@ env:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

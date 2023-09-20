@@ -21,7 +21,6 @@ function genLinks() {
         // Get either the manually-specified slug or the file path from the docs folder, ignoring file extension
         // and considering the index file as belonging to the parent directory (e.g. /locks/index.mdx -> /locks)
         const linkPath = frontmatter.slug || path.slice(4).replace('.mdx', '').replace(/index$/, '');
-        console.log(linkPath);
         validPaths.push(linkPath);
 
         // Get the word or list of words that should be associated with the above path, case insensitive
