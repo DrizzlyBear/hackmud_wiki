@@ -1,0 +1,24 @@
+/*
+ * ASSET IMPORT
+ */
+@font-face {
+    font-family: 'White Rabbit';
+    src: url('/font/whiterabbit-webfont.ttf') format('truetype');
+}
+
+
+/*
+ * AUTOCOLORING PLUGIN RELATED CLASSES
+ */
+.inline-script {
+    font-family: 'White Rabbit';
+}
+.color-trust {
+    color: orange;
+}
+.color-user {
+    color: grey;
+}
+.color-script {
+    color: green;
+}

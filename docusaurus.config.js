@@ -5,6 +5,9 @@ const GITHUB_PROJECT = 'hackmud_wiki';
 
 
 module.exports = async function createConfigAsync() {
+    // Disgusting hacks to enable nested ESM-style imports into CommonJS modules
+    const reColor = await (await import('./src/plugins/remark/color.js')).default();
+
     /** @type {import('@docusaurus/types').Config} */
     const config = {
         /**
@@ -48,6 +51,7 @@ module.exports = async function createConfigAsync() {
                     editUrl: `https://github.com/${GITHUB_ORG}/${GITHUB_PROJECT}/edit/main`, // TODO: decide whether to accept edits directly to `main` or have some staging branch
                     // Plugins for remark, at the Markdown AST level
                     remarkPlugins: [
+                        reColor // Accepts no options
                     ],
                     // Plugins for rehype, at the HTML AST level
                     rehypePlugins:[
@@ -63,7 +67,7 @@ module.exports = async function createConfigAsync() {
             [
                 '@docusaurus/theme-classic',
                 {
-                    // customCSS: require.resolve('./src/css/custom.css')
+                    customCss: require.resolve('./src/css/custom.css')
                 }
             ]
         ],
