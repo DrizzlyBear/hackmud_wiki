@@ -1,13 +1,14 @@
-/*
+/**
  * ASSET IMPORT
  */
+
 @font-face {
     font-family: 'White Rabbit';
     src: url('/font/whiterabbit-webfont.ttf') format('truetype');
 }
 
 
-/*
+/**
  * AUTOCOLORING PLUGIN RELATED CLASSES
  */
 .inline-script {
@@ -24,7 +25,7 @@
 }
 
 
-/*
+/**
  * WIKILINK PLUGIN RELATD CLASSES
  */
  /*a.wikilink {
