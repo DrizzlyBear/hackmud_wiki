@@ -8,4 +8,4 @@ tags: [lore]
 
 ---
 
-This is lore
+This is lore.
