@@ -3,12 +3,9 @@
 	src: url("./assets/white-rabbit.ttf")
 }
 
-p {
-	color: #7AB2F4
-}
-
 body {
-	background-color: #101215
+	background-color: #101215;
+	color: #7AB2F4
 }
 
 h1, h2, h3, h4, h5, h6 {

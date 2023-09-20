@@ -1,0 +1,92 @@
+import { parseColorCodes } from "./parseColorCodes.js"
+
+export const colorCodesToHex = {
+	a: "#000000",
+	b: "#3F3F3F",
+	c: "#676767",
+	d: "#7D0000",
+	e: "#8E3434",
+	f: "#A34F00",
+	g: "#725437",
+	h: "#A88600",
+	i: "#B2934A",
+	j: "#939500",
+	k: "#495225",
+	l: "#299400",
+	m: "#23381B",
+	n: "#00535B",
+	o: "#324A4C",
+	p: "#0073A6",
+	q: "#385A6C",
+	r: "#010067",
+	s: "#507AA1",
+	t: "#601C81",
+	u: "#43314C",
+	v: "#8C0069",
+	w: "#973984",
+	x: "#880024",
+	y: "#762E4A",
+	z: "#101215",
+	A: "#FFFFFF",
+	B: "#CACACA",
+	C: "#9B9B9B",
+	D: "#FF0000",
+	E: "#FF8383",
+	F: "#FF8000",
+	G: "#F3AA6F",
+	H: "#FBC803",
+	I: "#FFD863",
+	J: "#FFF404",
+	K: "#F3F998",
+	L: "#1EFF00",
+	M: "#B3FF9B",
+	N: "#00FFFF",
+	O: "#8FE6FF",
+	P: "#0070DD",
+	Q: "#A4E3FF",
+	R: "#0000FF",
+	S: "#7AB2F4",
+	T: "#B035EE",
+	U: "#E6C4FF",
+	V: "#FF00EC",
+	W: "#FF96E0",
+	X: "#FF0070",
+	Y: "#FF6A98",
+	Z: "#0C112B"
+}
+
+export function Code(props) {
+	console.log(props)
+
+	if (typeof props.children == "string") {
+		return <>
+			{parseColorCodes(props.children).map(token => {
+				if (token.color)
+					return <span style={`font-family: White Rabbit, monospace; color: ${colorCodesToHex[token.color]}`}>{token.text}</span>
+
+				return <span style={`font-family: White Rabbit, monospace`}>{token.text}</span>
+			})}
+		</>
+	}
+
+	if (Array.isArray(props.children)) {
+		return <>
+			{props.children.map(node => {
+				if (typeof node.props?.children.props.children == "string") {
+					return <>
+						{parseColorCodes(node.props.children.props.children).map(token => {
+							if (token.color)
+								return <span style={`font-family: White Rabbit, monospace; color: ${colorCodesToHex[token.color]}`}>{token.text}</span>
+
+							return <span style={`font-family: White Rabbit, monospace`}>{token.text}</span>
+						})}
+					</>
+				}
+
+				return node
+			})}
+		</>
+	}
+
+	return <>{props.children}</>
+}

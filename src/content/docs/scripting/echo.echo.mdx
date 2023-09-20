@@ -1,9 +1,10 @@
 ---
 title: echo.echo
 ---
-import PlayerScript from "../../../components/PlayerScript.astro"
+import { Code } from "../../../Code.mdx"
+export const components = { code: Code }
 
-<PlayerScript name="echo.echo"/> is a player script who's implementation looks something like the following:
+`` `Cecho`.`Lecho` `` is a player script who's implementation looks something like the following:
 ```js
 function (context, args) {
 	return args.echo
@@ -11,4 +12,4 @@ function (context, args) {
 ```
 
 It is used for demonstration purposes but you can upload this script yourself and replace every instance of
-<PlayerScript name="echo.echo"/> in this wiki with the name of your own script when testing the demos.
+`` `Cecho`.`Lecho` `` in this wiki with the name of your own script when testing the demos.
