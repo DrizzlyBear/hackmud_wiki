@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Scripting Reference | hackmud wiki</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Scripting Reference" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles." />
+<meta property="og:description" content="ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles." />
+<link rel="canonical" href="https://drizzlybear.github.io/hackmud_wiki/wiki/docs/ref.html" />
+<meta property="og:url" content="https://drizzlybear.github.io/hackmud_wiki/wiki/docs/ref.html" />
+<meta property="og:site_name" content="hackmud wiki" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Scripting Reference" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles.","headline":"Scripting Reference","url":"https://drizzlybear.github.io/hackmud_wiki/wiki/docs/ref.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/hackmud_wiki/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://drizzlybear.github.io/hackmud_wiki/feed.xml" title="hackmud wiki" /><link rel="icon" href="/hackmud_wiki/favicon.ico">
+</head>
+<body><header class="site-header">
+    <div class="wrapper"><a class="site-title" rel="author" href="/hackmud_wiki/">hackmud wiki</a>
+
+        
+            <nav class="site-nav">
+                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                <label for="nav-trigger">
+                    <span class="menu-icon">
+                        <svg viewBox="0 0 18 15" width="18px" height="15px">
+                            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                        </svg>
+                    </span>
+                </label>
+
+                <div class="trigger">
+                    
+                    
+                        
+                            
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn">Lore</button>
+                            <div class="dropdown-content">
+                                
+                                
+                                    <a href="/hackmud_wiki/wiki/lore/characters.html">Characters</a>
+                                
+                                    <a href="/hackmud_wiki/wiki/lore/events.html">Events</a>
+                                
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn">Upgrades</button>
+                            <div class="dropdown-content">
+                                
+                                
+                                    <a href="/hackmud_wiki/wiki/upgrades/locks.html">Locks</a>
+                                
+                                    <a href="/hackmud_wiki/wiki/upgrades/scripts.html">Scripts</a>
+                                
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn">SR</button>
+                            <div class="dropdown-content">
+                                
+                                
+                                    <a href="/hackmud_wiki/wiki/docs/ref.html">Scripting Reference</a>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            </nav>
+        
+    </div>
+</header>
+<main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                
+    <div class="sidebar" style="width:25%">
+        <ol id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#script">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-1">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-1">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-1">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-1">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-1">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-1">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-2">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-2">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-2">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-2">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-2">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-2">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-3">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-3">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-3">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-3">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-3">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-3">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-4">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-4">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-4">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-4">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-4">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-4">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-5">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-5">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-5">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-5">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-5">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-5">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-6">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-6">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-6">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-6">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-6">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-6">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-7">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-7">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-7">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-7">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-7">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-7">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-8">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-8">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-8">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-8">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-8">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-8">Sript</a></li>
+<li class="toc-entry toc-h1"><a href="#script-9">Script</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#scriptsscript-9">Scripts.script</a></li>
+<li class="toc-entry toc-h2"><a href="#scriptsscropt-9">scripts.scropt</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#heh-9">heh</a></li>
+<li class="toc-entry toc-h3"><a href="#ehe-9">ehe</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#sript-9">Sript</a></li>
+</ol>
+    </div>
+
+
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Scripting Reference</h1>
+        <p class="source-link">[<a href="https://github.com/DrizzlyBear/hackmud_wiki/blob/main/wiki/docs/ref.md?plain=1">source</a>]</p>
+    </header>
+
+    <div class="post-content">
+        <h1 id="script">
+<a class="anchor" href="#script" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript">
+<a class="anchor" href="#scriptsscript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt">
+<a class="anchor" href="#scriptsscropt" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh">
+<a class="anchor" href="#heh" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe">
+<a class="anchor" href="#ehe" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript">
+<a class="anchor" href="#sript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-1">
+<a class="anchor" href="#script-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-1">
+<a class="anchor" href="#scriptsscript-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-1">
+<a class="anchor" href="#scriptsscropt-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-1">
+<a class="anchor" href="#heh-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-1">
+<a class="anchor" href="#ehe-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-1">
+<a class="anchor" href="#sript-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-2">
+<a class="anchor" href="#script-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-2">
+<a class="anchor" href="#scriptsscript-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-2">
+<a class="anchor" href="#scriptsscropt-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-2">
+<a class="anchor" href="#heh-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-2">
+<a class="anchor" href="#ehe-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-2">
+<a class="anchor" href="#sript-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-3">
+<a class="anchor" href="#script-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-3">
+<a class="anchor" href="#scriptsscript-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-3">
+<a class="anchor" href="#scriptsscropt-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-3">
+<a class="anchor" href="#heh-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-3">
+<a class="anchor" href="#ehe-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-3">
+<a class="anchor" href="#sript-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-4">
+<a class="anchor" href="#script-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-4">
+<a class="anchor" href="#scriptsscript-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-4">
+<a class="anchor" href="#scriptsscropt-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-4">
+<a class="anchor" href="#heh-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-4">
+<a class="anchor" href="#ehe-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-4">
+<a class="anchor" href="#sript-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-5">
+<a class="anchor" href="#script-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-5">
+<a class="anchor" href="#scriptsscript-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-5">
+<a class="anchor" href="#scriptsscropt-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-5">
+<a class="anchor" href="#heh-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-5">
+<a class="anchor" href="#ehe-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-5">
+<a class="anchor" href="#sript-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-6">
+<a class="anchor" href="#script-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-6">
+<a class="anchor" href="#scriptsscript-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-6">
+<a class="anchor" href="#scriptsscropt-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-6">
+<a class="anchor" href="#heh-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-6">
+<a class="anchor" href="#ehe-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-6">
+<a class="anchor" href="#sript-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-7">
+<a class="anchor" href="#script-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-7">
+<a class="anchor" href="#scriptsscript-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-7">
+<a class="anchor" href="#scriptsscropt-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-7">
+<a class="anchor" href="#heh-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-7">
+<a class="anchor" href="#ehe-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-7">
+<a class="anchor" href="#sript-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-8">
+<a class="anchor" href="#script-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-8">
+<a class="anchor" href="#scriptsscript-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-8">
+<a class="anchor" href="#scriptsscropt-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-8">
+<a class="anchor" href="#heh-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-8">
+<a class="anchor" href="#ehe-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-8">
+<a class="anchor" href="#sript-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+<h1 id="script-9">
+<a class="anchor" href="#script-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script</h1>
+
+<p>Scripty script</p>
+
+<h2 id="scriptsscript-9">
+<a class="anchor" href="#scriptsscript-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scripts.script</h2>
+
+<p>scroptable</p>
+
+<h2 id="scriptsscropt-9">
+<a class="anchor" href="#scriptsscropt-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>scripts.scropt</h2>
+
+<p>non-scropt</p>
+
+<h3 id="heh-9">
+<a class="anchor" href="#heh-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>heh</h3>
+
+<p>oh no</p>
+
+<h3 id="ehe-9">
+<a class="anchor" href="#ehe-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>ehe</h3>
+
+<p>lorem</p>
+
+<h1 id="sript-9">
+<a class="anchor" href="#sript-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sript</h1>
+
+<p>ipsum</p>
+
+    </div>
+</article>
+
+            </div>
+        </main><footer class="site-footer h-card">
+  <data class="u-url" href="/hackmud_wiki/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">hackmud wiki</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">hackmud wiki</li><li><a class="u-email" href="mailto:support@hackmud.com">support@hackmud.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/DrizzlyBear"><svg class="svg-icon"><use xlink:href="/hackmud_wiki/assets/minima-social-icons.svg#github"></use></svg> <span class="username">DrizzlyBear</span></a></li><li><a href="https://www.twitter.com/hackmudgame"><svg class="svg-icon"><use xlink:href="/hackmud_wiki/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">hackmudgame</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

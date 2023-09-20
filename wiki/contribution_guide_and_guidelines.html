@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Contribution Guide &amp; Guidelines | hackmud wiki</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Contribution Guide &amp; Guidelines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles." />
+<meta property="og:description" content="ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles." />
+<link rel="canonical" href="https://drizzlybear.github.io/hackmud_wiki/wiki/contribution_guide_and_guidelines.html" />
+<meta property="og:url" content="https://drizzlybear.github.io/hackmud_wiki/wiki/contribution_guide_and_guidelines.html" />
+<meta property="og:site_name" content="hackmud wiki" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Contribution Guide &amp; Guidelines" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles.","headline":"Contribution Guide &amp; Guidelines","url":"https://drizzlybear.github.io/hackmud_wiki/wiki/contribution_guide_and_guidelines.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/hackmud_wiki/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://drizzlybear.github.io/hackmud_wiki/feed.xml" title="hackmud wiki" /><link rel="icon" href="/hackmud_wiki/favicon.ico">
+</head>
+<body><header class="site-header">
+    <div class="wrapper"><a class="site-title" rel="author" href="/hackmud_wiki/">hackmud wiki</a>
+
+        
+            <nav class="site-nav">
+                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                <label for="nav-trigger">
+                    <span class="menu-icon">
+                        <svg viewBox="0 0 18 15" width="18px" height="15px">
+                            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                        </svg>
+                    </span>
+                </label>
+
+                <div class="trigger">
+                    
+                    
+                        
+                            
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn">Lore</button>
+                            <div class="dropdown-content">
+                                
+                                
+                                    <a href="/hackmud_wiki/wiki/lore/characters.html">Characters</a>
+                                
+                                    <a href="/hackmud_wiki/wiki/lore/events.html">Events</a>
+                                
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn">Upgrades</button>
+                            <div class="dropdown-content">
+                                
+                                
+                                    <a href="/hackmud_wiki/wiki/upgrades/locks.html">Locks</a>
+                                
+                                    <a href="/hackmud_wiki/wiki/upgrades/scripts.html">Scripts</a>
+                                
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn">SR</button>
+                            <div class="dropdown-content">
+                                
+                                
+                                    <a href="/hackmud_wiki/wiki/docs/ref.html">Scripting Reference</a>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            </nav>
+        
+    </div>
+</header>
+<main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Contribution Guide &amp; Guidelines</h1>
+        <p class="source-link">[<a href="https://github.com/DrizzlyBear/hackmud_wiki/blob/main/wiki/contribution_guide_and_guidelines.md?plain=1">source</a>]</p>
+    </header>
+
+    
+
+    <div class="table-of-contents">
+        <p>Contents</p>
+        <hr/>
+        <ol id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#getting-started">Getting Started</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#project-structure">Project Structure</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#front-matter">Front Matter</a></li>
+<li class="toc-entry toc-h3"><a href="#tags">Tags</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#plugins">Plugins</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#table-of-contents">Table of Contents</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#guidelines">Guidelines</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#content">Content</a></li>
+<li class="toc-entry toc-h2"><a href="#style">Style</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#casing-and-conventions">Casing and Conventions</a></li>
+<li class="toc-entry toc-h3"><a href="#contributing-markdown--code">Contributing Markdown &amp; Code</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+    </div>
+
+    
+
+    <div class="post-content">
+        <h1 id="getting-started">
+<a class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
+
+<p>To submit changes to this wiki, you should make a pull request to the <a href="https://github.com/DrizzlyBear/hackmud_wiki">hackmud_wiki</a> repository. First fork the repository, make changes either directly through github on your forked version or locally, then submit a new pull request to contribute back your changes.</p>
+
+<p>If you need any help at all, please file an issue on the github repository, or ask a helperbot/moderator in the discord.</p>
+
+<h2 id="project-structure">
+<a class="anchor" href="#project-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Structure</h2>
+
+<p>Article content should be posted within the <code class="language-plaintext highlighter-rouge">/wiki/</code> folder within the repository and images should be posted within the <code class="language-plaintext highlighter-rouge">/assets/images/</code> folder. Keep pages within their respective folders - for instance, locks should go in <code class="language-plaintext highlighter-rouge">/wiki/locks/</code>.</p>
+
+<h3 id="front-matter">
+<a class="anchor" href="#front-matter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Front Matter</h3>
+
+<p>Each page on the wiki begins with some content (called the front matter) enclosed within two <code class="language-plaintext highlighter-rouge">---</code> markers, for example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Your Page Title
+categories: somecategory (e.g. locks)
+linkmdname: somename
+linkdisplayname: shortname
+tags: [locks, tier_1]
+---
+</code></pre></div></div>
+
+<p>This should contain <code class="language-plaintext highlighter-rouge">title: &lt;article title&gt;</code>, <code class="language-plaintext highlighter-rouge">linkmdname: &lt;name used within markdown to link to this article&gt;</code>, and <code class="language-plaintext highlighter-rouge">linkdisplayname: &lt;name displayed when someone links to this article&gt;</code>, at a minimum. <code class="language-plaintext highlighter-rouge">linkmdname</code> <em>should</em> match the filename of the article, but may be shortened for convenience or for disambiguation purposes. Similarly, <code class="language-plaintext highlighter-rouge">linkdisplayname</code> should match the title of the article, but may also be shortened for convenience. Pages must have unique <code class="language-plaintext highlighter-rouge">linkmdname</code>s, so be mindful of that.</p>
+
+<h3 id="tags">
+<a class="anchor" href="#tags" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tags</h3>
+
+<p>Each article can be assigned an array of two tags within the front matter: the first tag will determine which table of related articles will be linked in the "See Also:" footer, and the second tag will determine which column this article will appear in. For instance, if you were to put <code class="language-plaintext highlighter-rouge">tags: [locks, tier_1]</code> in the front matter of the ez_21 article, a table of all other locks would appear in the footer of that article, and the ez_21 article would appear within the tier_1 column of all other article's locks table. If you omit the second tag (e.g. <code class="language-plaintext highlighter-rouge">tags: [locks]</code>), a table of all locks will appear without adding the current article to a column.</p>
+
+<h2 id="plugins">
+<a class="anchor" href="#plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugins</h2>
+
+<p>We have plugins to link to both article pages and images. In order to link to a page, you should use the syntax [[linkmdname]]. In order to link to an image, use the syntax ![[image_path]]. This image path is interpreted relative to <code class="language-plaintext highlighter-rouge">/assets/images</code>, so for instance, ![[hackmud.png]] will link to <code class="language-plaintext highlighter-rouge">/assets/images/hackmud.png</code> within the repository, and similarly ![[locks/ez_21.png]] will link to <code class="language-plaintext highlighter-rouge">/assets/imags/locks/ez_21.png</code>. In general, we want to avoid any future potential breakages related to moving pages around, which is why these plugins operate like this.</p>
+
+<h3 id="table-of-contents">
+<a class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h3>
+
+<p>Each page should have a table of contents automatically generated by a plugin from the markdown headers written in the article text. If your page has a table of contents and it should not, add <code class="language-plaintext highlighter-rouge">toc: false</code> within the front matter.</p>
+
+<h1 id="guidelines">
+<a class="anchor" href="#guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guidelines</h1>
+
+<h2 id="content">
+<a class="anchor" href="#content" aria-hidden="true"><span class="octicon octicon-link"></span></a>Content</h2>
+
+<p>Spoilers are allowed on this wiki: if someone chooses to seek out spoilers for game mechanics, that is their own choice. The wiki should work for ~95% of usecases. For instance, with locks, there should be enough detail to comfortably solve or write a solver for the lock given the information on the pages. Extraneous detail or trivia should in general be left out. A good rule of thumb is if it is something you would bring up while giving a solid explanation of the mechanic, it belongs on the wiki.</p>
+
+<p>Writing should be relatively professional: use of abbreviations or contractions such as "isn't" or "don't" is discouraged.</p>
+
+<h2 id="style">
+<a class="anchor" href="#style" aria-hidden="true"><span class="octicon octicon-link"></span></a>Style</h2>
+
+<h3 id="casing-and-conventions">
+<a class="anchor" href="#casing-and-conventions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casing and Conventions</h3>
+
+<p>When adding files or folders, use lowercase path names, and replace spaces with underscores. However, article titles and heading names should be capitalized as if they were book titles. The names of locks should reflect the name of the <em>item</em> within the game - in particular, "ez_21" should always be preferred to "Ez_21" or "EZ_21", including at the start of a sentence or within a title. The name hackmud should always be in all lowercase within article content, with no spaces between the letters. "hackmud" is preferred to "h a c k m u d" or "ｈａｃｋｍｕｄ" for consistency and ease of writing. However, it is acceptable to stylize it as "ｈａｃｋｍｕｄ" in places where it appears prominently: for instance, as the title for the hackmud page, in the wiki name, or in the text that appears at the bottom of all pages.</p>
+
+<h3 id="contributing-markdown--code">
+<a class="anchor" href="#contributing-markdown--code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing Markdown &amp; Code</h3>
+
+<p>In terms of the <em>raw</em> markdown content of articles: paragraphs should be on a single line in markdown; it is expected that contributors will turn on line wrap in their editors. If you contribute to code within the repository, you should be using spaces instead of tabs, and should be using Unix line endings ("\n").</p>
+
+    </div>
+</article>
+
+            </div>
+        </main><footer class="site-footer h-card">
+  <data class="u-url" href="/hackmud_wiki/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">hackmud wiki</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">hackmud wiki</li><li><a class="u-email" href="mailto:support@hackmud.com">support@hackmud.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/DrizzlyBear"><svg class="svg-icon"><use xlink:href="/hackmud_wiki/assets/minima-social-icons.svg#github"></use></svg> <span class="username">DrizzlyBear</span></a></li><li><a href="https://www.twitter.com/hackmudgame"><svg class="svg-icon"><use xlink:href="/hackmud_wiki/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">hackmudgame</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>ｈａｃｋｍｕｄ is a cyberpunk themed text-based hacking simulator for intel-compatible personal home computers. Get lost in a deep and complex world full of challenging puzzles.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
