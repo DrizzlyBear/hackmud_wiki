@@ -1,4 +1,7 @@
 // @ts-check
+const wikiLinkPlugin = require('remark-wiki-link');
+
+const {normalizeId, genLinks} = require('./src/utils/genlinks.js');
 
 const GITHUB_ORG = 'DrizzlyBear'; // TODO: update when repo ownership changes
 const GITHUB_PROJECT = 'hackmud_wiki';
@@ -51,7 +54,22 @@ module.exports = async function createConfigAsync() {
                     editUrl: `https://github.com/${GITHUB_ORG}/${GITHUB_PROJECT}/edit/main`, // TODO: decide whether to accept edits directly to `main` or have some staging branch
                     // Plugins for remark, at the Markdown AST level
                     remarkPlugins: [
-                        reColor // Accepts no options
+                        reColor, // Accepts no options
+                        [
+                            wikiLinkPlugin,
+                            /*{
+                                permalinks: genLinks().validPaths,
+                                pageResolver: s => genLinks().idToPath[normalize(s)],
+                                hrefTemplate: s => `/${GITHUB_PROJECT}` + (s || '/contributing/newpage')
+                            }*/
+                            {
+                                permalinks: genLinks().validPaths,
+                                pageResolver: s => genLinks().idToPath[normalizeId(s)] || [],
+                                hrefTemplate: s => s || '/contributing/newpage',
+                                wikiLinkClassName: 'wikilink',
+                                newClassName: 'wikilink-new'
+                            }
+                        ]
                     ],
                     // Plugins for rehype, at the HTML AST level
                     rehypePlugins:[

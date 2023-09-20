@@ -22,3 +22,14 @@
 .color-script {
     color: green;
 }
+
+
+/*
+ * WIKILINK PLUGIN RELATD CLASSES
+ */
+ /*a.wikilink {
+
+ }*/
+a.wikilink-new {
+    color: var(--ifm-color-danger);
+}

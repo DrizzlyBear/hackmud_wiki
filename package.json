@@ -21,7 +21,7 @@
     "glob": "^10.3.4",
     "gray-matter": "^4.0.3",
     "mdast-util-find-and-replace": "^3.0.0",
-    "remark-wiki-link": "^1.0.4",
+    "remark-wiki-link": "^0.0.4",
     "unist-builder": "^4.0.0"
   },
   "devDependencies": {
