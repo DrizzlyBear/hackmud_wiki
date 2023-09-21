@@ -15,17 +15,17 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.1",
-    "@docusaurus/plugin-content-docs": "^2.4.1",
-    "@docusaurus/theme-classic": "^2.4.1",
-    "glob": "^10.3.4",
+    "@docusaurus/core": "^2.4.3",
+    "@docusaurus/plugin-content-docs": "^2.4.3",
+    "@docusaurus/theme-classic": "^2.4.3",
+    "glob": "^10.3.5",
     "gray-matter": "^4.0.3",
     "mdast-util-find-and-replace": "^3.0.0",
     "remark-wiki-link": "^0.0.4",
     "unist-builder": "^4.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.4.1",
+    "@docusaurus/module-type-aliases": "^2.4.3",
     "@tsconfig/docusaurus": "^2.0.1",
     "typescript": "^5.2.2"
   }
