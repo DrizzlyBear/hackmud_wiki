@@ -1,0 +1,29 @@
+---
+title: accts.balance_of_owner (FULLSEC)
+---
+import { Code } from "../../../../Code.mdx"
+import * as Mdn from "../../../../mdn.mdx"
+export const components = { code: Code }
+
+Get the GC balance of the script owner.
+
+## CLI
+Returns subscript usage.
+
+## Subscript
+```js
+#fs.accts.balance_of_owner()
+```
+
+### Args
+None.
+
+### Return
+Type: <code>[number]({Mdn.NUMBER})</code>
+
+The GC balance of the script owner.
+
+### ``` `Faccts``A.``Lbalance_of_owner` ``` vs ``` `Faccts``A.``Lbalance` ```
+``` `Faccts``A.``Lbalance_of_owner` ``` always gives the balance of the owner of the script
+``` `Faccts``A.``Lbalance_of_owner` ``` is called in. ``` `Faccts``A.``Lbalance` ``` however gives the GC balance of the
+user calling the top level script.

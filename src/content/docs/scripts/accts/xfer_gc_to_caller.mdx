@@ -1,6 +1,5 @@
 ---
 title: accts.xfer_gc_to_caller (FULLSEC)
-description: A reference page in my new Starlight docs site.
 ---
 import { Code } from "../../../../Code.mdx"
 export const components = { code: Code }
@@ -15,13 +14,19 @@ Transfers [GC](https://hackmud.fandom.com/wiki/GC) from the [script](https://hac
 
 ### Args
 #### <code>`` `Namount` ``</code>
-`` `NType`: `` <code>[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+Type: <code>[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)</code>
 
 The amount of GC as an integer number or GC string.
 
-## Returns
-`` `NType`:`` [`` `HStandardScriptResponse` ``](/scripting/standard-script-response)
+## Return
+Type: <code>[StandardScriptResponse](/scripting/standard-script-response)</code>
 
 ## Subscript
-Same as CLI
+```js
+#fs.accts.xfer_gc_to_caller({ amount: 1 })
+#fs.accts.xfer_gc_to_caller({ amount: "1GC" })
+```
+
+### Args and Return
+Same as CLI.

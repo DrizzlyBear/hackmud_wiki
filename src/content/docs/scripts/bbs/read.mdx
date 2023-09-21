@@ -1,0 +1,56 @@
+---
+title: bbs.read (FULLSEC)
+---
+import { Code } from "../../../../Code.mdx"
+export const components = { code: Code }
+
+Alias: ``` `Cbbs``A.``Lr` ```
+
+Read [forum](https://hackmud.com/forums) information in game.
+
+## CLI
+### ``` `Cbbs``A.``Lread` ```
+
+Lists board names and the summaries for the 30 latest posts. These summaries include upvotes, title, post id, author
+user, and [date string](/conventions/date-string).
+
+### ``` `Cbbs``A.``Lread` `A{` `Nboard``A:` `V"<board>"` `A}` ```
+As of yet, the possible boards are `` `V"news"` ``, `` `V"patch_notes"` ``, `` `V"bugs_features_ideas"` ``,
+`` `V"new_players"` ``, `` `V"corps"` ``, and `` `V"general_discussion"` ``.
+
+When given, lists the summaries (in the same format as the main page) for the 30 latest posts in that board.
+
+### ``` `Cbbs``A.``Lread` `A{` `Npost``A:` `V"<post id>"` `A}` ```
+Returns the title, author user, date, and content of the post associated with the post id.
+
+## Subscript
+```js
+#fs.bbs.read()
+```
+
+### Args
+None.
+
+## Return
+An object containing containing boards (their titles and slugs) and posts.
+
+### Type
+```ts
+type BbsReadReturn = {
+	boards: { title: string, slug: string }[]
+	posts: {
+		vote_count: number
+		short_id: string
+		is_sticky: boolean
+		is_locked: boolean
+		is_archived: boolean
+		is_answered: boolean
+		is_implemented: boolean
+		title: string
+		slug: string
+		vote: boolean
+		username: string
+		time: string
+	}[]
+}
+```

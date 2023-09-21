@@ -56,36 +56,34 @@ export const colorCodesToHex = {
 }
 
 export function Code(props) {
-	console.log(props)
-
 	if (typeof props.children == "string") {
-		return <>
+		return <span style="font-family: White Rabbit, monospace">
 			{parseColorCodes(props.children).map(token => {
 				if (token.color)
-					return <span style={`font-family: White Rabbit, monospace; color: ${colorCodesToHex[token.color]}`}>{token.text}</span>
+					return <span style={`color: ${colorCodesToHex[token.color]}`}>{token.text}</span>
 
-				return <span style={`font-family: White Rabbit, monospace`}>{token.text}</span>
+				return token.text
 			})}
-		</>
+		</span>
 	}
 
 	if (Array.isArray(props.children)) {
-		return <>
+		return <div style="font-family: White Rabbit, monospace; line-height: 1rem">
 			{props.children.map(node => {
 				if (typeof node.props?.children.props.children == "string") {
 					return <>
 						{parseColorCodes(node.props.children.props.children).map(token => {
 							if (token.color)
-								return <span style={`font-family: White Rabbit, monospace; color: ${colorCodesToHex[token.color]}`}>{token.text}</span>
+								return <span style={`color: ${colorCodesToHex[token.color]}`}>{token.text}</span>
 
-							return <span style={`font-family: White Rabbit, monospace`}>{token.text}</span>
+							return token.text
 						})}
 					</>
 				}
 
 				return node
 			})}
-		</>
+		</div>
 	}
 
 	return <>{props.children}</>

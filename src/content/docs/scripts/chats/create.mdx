@@ -1,0 +1,48 @@
+---
+title: chats.create (FULLSEC)
+---
+import { Code } from "../../../../Code.mdx"
+export const components = { code: Code }
+
+Create a new chat channel.
+
+## CLI
+### ``` `Fchats``A.``Lcreate` `A{` `Nname``A:` `V"<string>"` `A}` ```
+Create a channel without a password. The channel name is not automatically published anywhere so it will remain
+somewhat private. The channel name can be up to 50 characters.
+
+### ``` `Fchats``A.``Lcreate` `A{` `Nname``A:` `V"<string>"``A,` `Npassword``A:` `V"<string>"` `A}` ```
+Create a channel with a password. This makes it so ``` `Fchats``A.``Ljoin` ``` requires a password to join the channel.
+
+## Subscript
+```js
+#fs.chats.create({ name: "foo" })
+#fs.chats.create({ name: "foo", password: "bar" })
+```
+
+### Args
+None.
+
+## Return
+An object containing containing boards (their titles and slugs) and posts.
+
+### Type
+```ts
+type BbsReadReturn = {
+	boards: { title: string, slug: string }[]
+	posts: {
+		vote_count: number
+		short_id: string
+		is_sticky: boolean
+		is_locked: boolean
+		is_archived: boolean
+		is_answered: boolean
+		is_implemented: boolean
+		title: string
+		slug: string
+		vote: boolean
+		username: string
+		time: string
+	}[]
+}
+```

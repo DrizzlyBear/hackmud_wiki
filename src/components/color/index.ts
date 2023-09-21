@@ -1,8 +1,0 @@
-export { default as A } from "./A.astro"
-export { default as B } from "./B.astro"
-export { default as C } from "./C.astro"
-export { default as N } from "./N.astro"
-export { default as V } from "./V.astro"
-export { default as L } from "./L.astro"
-export { default as D } from "./D.astro"
-export { default as S } from "./S.astro"
